@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurax Montañismo GT | Outdoor Gear & Merch Store</title>
+    
+    <!-- ESTILOS CSS EN EL MISMO ARCHIVO -->
+    <style>
+        /* Configuración General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0d0d0d;
+            border-bottom: 2px solid #5CE1E6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo h1 {
+            color: #FFFFFF;
+            font-size: 24px;
+        }
+
+        .logo span {
+            color: #5CE1E6;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #5CE1E6;
+        }
+
+        /* Sección Hero */
+        .hero {
+            height: 75vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            color: #5CE1E6;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #5CE1E6;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Secciones Informativas */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #5CE1E6;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            margin-bottom: 40px;
+            color: #cccccc;
+        }
+
+        /* Tarjetas (Misión, Visión, Valores) */
+        .cards-container, .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card, .product-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            width: 300px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover, .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #5CE1E6;
+        }
+
+        .card h3, .product-card h3 {
+            color: #5CE1E6;
+            margin-bottom: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0d0d0d;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>AURAX<span>.gt</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Más que caminar, vivir la montaña</h2>
+            <p>Conquistando a Guate desde lo alto. Gear, ropa y artículos para aventureros.</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="about">
+        <h2>Sobre Aurax Montañismo GT</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Misión</h3>
+                <p>Inspirar a explorar, superar límites y conectar con la naturaleza.</p>
+            </div>
+            <div class="card">
+                <h3>Visión</h3>
+                <p>Consolidar a Aurax como una comunidad líder en equipo y experiencias de montaña en Guatemala.</p>
+            </div>
+            <div class="card">
+                <h3>Valores</h3>
+                <p>Seguridad, organización rigurosa, pasión por la naturaleza, sostenibilidad y superación personal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="products">
+        <h2>Línea de Productos</h2>
+        <p class="subtitle">Equipamiento específico para tus aventuras al aire libre</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=500&q=80" alt="Equipo Técnico">
+                <h3>Equipo Técnico</h3>
+                <p>Artículos y herramientas diseñadas para la seguridad en cada recorrido.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Ropa y Merch">
+                <h3>Merch & Indumentaria</h3>
+                <p>Ropa cómoda y resistente para conquistar las cumbres de Guatemala.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=500&q=80" alt="Accesorios">
+                <h3>Accesorios</h3>
+                <p>Complementos indispensables para tu próxima caminata o acampada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <h3>AURAX MONTAÑISMO GT</h3>
+            <p>Comunidad dedicada a la aventura y venta de artículos de montaña.</p>
+            <p>&copy; 2026 Aurax.gt - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
